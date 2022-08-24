@@ -25,7 +25,7 @@ func main() {
 
 				// Sem o mutex lockando a variável counter, as goroutines irão alterar o conteúdo
 				// dela ao mesmo tempo, resultando assim em valores inconsistenctes no final da função.
-				// O mutex garante que apenas um goroutine por vez irá alterar o conteúido da variável.
+				// O mutex garante que apenas um goroutine por vez irá alterar o conteúdo da variável.
 
 				mu.Lock()
 				// Seção crítica
